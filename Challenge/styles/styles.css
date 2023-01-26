@@ -1,0 +1,38 @@
+body{
+    background-color: hotpink;
+}
+header{
+    text-align: center;
+    color: white;
+    font-size: 20px;
+}
+header:hover{
+    color: black;
+}
+img{
+    width: 10%;
+    display: block;
+    margin: 0 auto;
+}
+p{
+    text-align: center;
+    color: white;
+}
+#name{
+    font-size: 20px;
+}
+ol{
+    padding-left: 40%;
+}
+section p {
+    font-size: 30px;
+    padding-left: 41%;
+    padding-right: 41%;
+}
+
+footer p {
+    color: black;
+}
+* {
+    border: 2px solid blue;
+}
