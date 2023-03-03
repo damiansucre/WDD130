@@ -1,0 +1,81 @@
+main{
+    display: grid;
+    grid-template-columns: 38% 24% 38%;
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    padding-top:20px;
+    padding-bottom: 20px;
+}
+div{
+    grid-column: 2/3;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    border-radius: 10px;
+    background-color: white;
+}
+img{
+    grid-column: 1/4;
+    grid-row: 1/2;
+    width:100%;
+    justify-self: center;
+    align-self: center;
+    border-top: 10px;
+}
+#week{
+    grid-column: 1/4;
+    grid-row: 2/3;
+    justify-self: center;
+    align-self: center;
+    color: darkblue;
+}
+h1{
+    grid-column: 1/4;
+    grid-row: 3/4;
+    justify-self: center;
+    font-size: 48px;
+}
+p{
+    grid-column: 1/4;
+    grid-row: 4/5;
+    padding: 35px;
+    font-size: 24px;
+    justify-self: center;
+}
+#fifth{
+    grid-column: 1/2;
+    grid-row: 5/6;
+    background-color: darkblue;
+    color: white;
+    justify-self:center
+}
+#read{
+    grid-column: 1/2;
+    grid-row: 6/7;
+    background-color: darkblue;
+    color: white;
+}
+#twenty{
+    grid-column: 2/3;
+    grid-row: 5/6;
+    background-color: darkblue;
+    color: white;
+}
+#views{
+    grid-column: 2/3;
+    grid-row: 6/7;
+    background-color: darkblue;
+    color: white;
+}
+#fifteen{
+    grid-column: 3/4;
+    grid-row: 5/6;
+    background-color: darkblue;
+    color: white;
+}
+#comments{
+    grid-column: 3/4;
+    grid-row: 6/7;
+    background-color: darkblue;
+    color: white;
+}
