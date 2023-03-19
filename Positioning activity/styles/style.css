@@ -1,0 +1,40 @@
+#content{
+    width: 1000px;
+    padding: 10px;
+}
+#block_1{
+    width: 50%;
+}
+#block_2{
+    width: 50%;
+}
+#block_3{
+    width: 50%;
+    margin-left: auto;
+}
+#block_4{
+    width: 50%;
+}
+#block_2, #block_4{
+    margin: 0 auto;
+}
+
+
+p:nth-of-type(1) {
+    text-align: left;
+}
+p:nth-of-type(2){
+    text-align: center;
+}
+p:nth-of-type(3){
+    text-align: right;
+}
+#line_1{
+    text-align: right;
+}
+#line_2{
+    text-align: center;
+}
+#line_3{
+    text-align: left;
+}
