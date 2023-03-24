@@ -118,7 +118,7 @@ nav a:hover{
     line-height: 2em;
     padding: 30px;
     color: #E07A5F;
-    font-family: 'Covered By Your Grace' Arial, Helvetica, sans-serif;
+    font-family: 'Covered By Your Grace', Arial, Helvetica, sans-serif;
     font-size: 30px;
 }
 .second_section{
@@ -138,7 +138,7 @@ nav a:hover{
     line-height: 2em;
     padding: 30px;
     color: #E07A5F;
-    font-family: Covered By Your Grace;
+    font-family: 'Covered By Your Grace', Arial, Helvetica, sans-serif;
     font-size: 30px;
     grid-column: 2/3;
 }
@@ -333,3 +333,72 @@ footer{
 a {
     text-decoration: none;
 }
+
+/* About Us page*/
+
+.first_section_about{
+    display: grid;
+    grid-template-columns: 10% 80% 10%;
+    background-color: black;
+}
+#joystick_image{
+    grid-column: 1/4;
+    grid-row: 1/6;
+    width: 100%;
+
+}
+#mission{
+    grid-column: 2/3;
+    grid-row: 1/2;
+    text-align: center;
+    align-self: self-end;
+    font-family: 'Covered By Your Grace', Arial, Helvetica, sans-serif;
+    font-size: 60px;
+    color: #3D405B;
+    
+}
+#about_us_p{
+    grid-column: 2/3;
+    grid-row: 2/3;
+    color: #F4F1DE;
+
+}
+#vision{
+    grid-column: 2/3;
+    grid-row: 3/4;
+    text-align: center;
+    font-family: 'Covered By Your Grace', Arial, Helvetica, sans-serif;
+    font-size: 60px;
+    color: #F4F1DE;
+    align-self: self-end;
+}
+#vision_p{
+    grid-column: 2/3;
+    grid-row: 4/5;
+    color: #F4F1DE;
+}
+#virtual_reality_img{
+    grid-column: 2/3;
+    grid-row: 5/6;
+    width: 50%;
+    justify-self: center;
+    border: 10px solid #E07A5F;
+    box-shadow: 5px 5px 10px #6f7364;
+}
+#virtual_reality_img:hover{
+    animation: shake 0.5s;
+    animation-iteration-count: infinite;
+}
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+  }
