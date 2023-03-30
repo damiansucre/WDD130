@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>F.A.Q. | D&F Rent</title>
+    <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
     <div id="content">
@@ -13,68 +14,107 @@
                 <img class="logo" src="images/logo.png" alt="D&F Rent Logo">
             </a>
             <nav>
-                <a href="index.html">Home</a>
-                <a href="about_Us.html">About Us</a>
-                <a href="FAQ.html">F.A.Q.</a>
+                <a id="home-nav" href="index.html">Home</a>
+                <a id="about-nav" href="about_Us.html">About Us</a>
+                <a id="faq-nav" href="FAQ.html">F.A.Q.</a>
             </nav>
         </header>
         <main class="main_grid_FAQ">
-            <h1>
+            <h1 id="faq_title">
                 F.A.Q.
             </h1>
             <section class="first_section_faq">
-                <img src="images/img06.jpg" alt="Joystick image">
-                <h3>What is the price of equipment rental?</h3>
-                <p>
-                    The prices of equipment rental for parties vary depending on the type of equipment required, 
-                    the size, the additional ones you need and the number of days the installation requires. 
-                    Request a free estimate, we will be happy to advise you.
-                </p>
-                <h3>
-                    Can I get discounts on Equipment Rental?
-                </h3>
-                <p>
-                    There are two types of discounts available: 
-                    Quantity of products: For contracting more than one product or service. 
-                    Loyal customer: From the second contracted service Event organizers.
-                     See which of them suits you.
-                </p>
-                <h3>What happens if the event is canceled or postponed?</h3>
-                <p>
-                    By postponing the event, the company offers the possibility of changing the date of 
-                    the reservation at no additional cost, as long as there is availability of the products. 
-                    In case of suspension, the deposit is not refunded.
-                </p>
+                <div id="grid_joystick_image">
+                    <img id="joytick_image_FAQ" src="images/img06.jpg" alt="Joystick image">
+                </div>
+                <div id="grid_question_01">
+                    <button class="question_01">What is the price of equipment rental?</button>
+                    <div class="panel">
+                        <p class="answer_01">
+                            The prices of equipment rental for parties vary depending on the type of equipment required, 
+                            the size, the additional ones you need and the number of days the installation requires. 
+                            Request a free estimate, we will be happy to advise you.
+                        </p>
+                    </div>
+                </div>
+                <div id="grid_question_02">
+                    <button class="question_01">Can I get discounts on Equipment Rental?</button>
+                    <div class="panel">
+                        <p class="answer_01">
+                            There are two types of discounts available: 
+                            Quantity of products: For contracting more than one product or service. 
+                            Loyal customer: From the second contracted service Event organizers.
+                            See which of them suits you.
+                        </p>
+                    </div>
+                </div>
+                <div id="grid_question_03">
+                    <button class="question_01">What happens if the event is canceled or postponed?</button>
+                    <div class="panel">
+                        <p class="answer_01">
+                            By postponing the event, the company offers the possibility of changing the date of 
+                            the reservation at no additional cost, as long as there is availability of the products. 
+                            In case of suspension, the deposit is not refunded.
+                        </p>
+                    </div>
+                </div>
             </section>
-            <section>
-                <h3>
-                    Do you offer services both for companies and families?
-                </h3>
-                <p>
-                    Yeah. For each type of client we offer different solutions. 
+            <section class="second_section_faq">
+                <div id="grid_question_04">
+                    <button class="question_01">Do you offer services both for companies and families?</button>
+                    <div class="panel">
+                        <p class="answer_01">
+                            Yeah. For each type of client we offer different solutions. 
                     Our objective towards companies focuses on building reciprocal relationships in which both companies benefit, 
                     helping the achievement of objectives by the contracting party. 
                     Our objective towards families is to offer them the possibility of detaching themselves from the organization 
-                    of the event and that they can focus on enjoying it. 
-                </p>
-                <h3>Can equipment be rented for use other than an event?</h3>
-                <p>
-                    We offer equipment for all types of use.
-                </p>
-                <h3>
-                    If I don't have a clear idea of what I need for an event, can you advise me? 
-                </h3>
-                <p>
-                    We have experts in the area willing to advise you on everything that is necessary to guarantee a unique and unforgettable event.
-                </p>
-                <img src="images/img07.jpg" alt="guy singing">
+                    of the event and that they can focus on enjoying it.
+                        </p>
+                    </div>
+                </div>
+                <div id="grid_question_05">
+                    <button class="question_01">Can equipment be rented for use other than an event?</button>
+                    <div class="panel">
+                        <p class="answer_01">
+                            We offer equipment for all types of use.
+                        </p>
+                    </div>
+                </div>
+                <div id="grid_question_06">
+                    <button class="question_01">If I don't have a clear idea of what I need for an event, can you advise me?</button>
+                    <div class="panel">
+                        <p class="answer_01">
+                            We have experts in the area willing to advise you on everything that is necessary to guarantee a unique and unforgettable event.
+                        </p>
+                    </div>
+                </div>
+                <div id="grid_guy_singing">
+                    <img id="guy_singing_FAQ" src="images/img07.jpg" alt="guy singing">
+                </div>
+                
             </section>
-            <div>
-                <img src="images/questions.png" alt="faq icon">
+            <div id="third_section_faq">
+                <img id="faq_icon" src="images/questions.png" alt="faq icon">
             </div>
+            <script>
+                var acc = document.getElementsByClassName("question_01");
+                var i;
+                
+                for (i = 0; i < acc.length; i++) {
+                  acc[i].addEventListener("click", function() {
+                    this.classList.toggle("active");
+                    var panel = this.nextElementSibling;
+                    if (panel.style.maxHeight) {
+                      panel.style.maxHeight = null;
+                    } else {
+                      panel.style.maxHeight = panel.scrollHeight + "px";
+                    }
+                  });
+                }
+                </script>
         </main>
         <footer>
-            <div>
+            <div id="information">
                 <h2>Equipment Rental</h2>
                 <p>PS4 and PS5</p>
                 <p>Karaoke</p>
@@ -82,20 +122,23 @@
                 <p>Projectors</p>
                 <p>DJ</p>
             </div>
-            <div>
-                <a href="index.html">Home</a>
-                <a href="about_Us.html">About Us</a>
-                <a href="FAQ.html">F.A.Q.</a>
-                <a href="site-plan.html">Site plan</a>
+            <div id="links">
+                <a id="index_link_footer" href="index.html">Home</a>
+                <a id="about_link_footer" href="about_Us.html">About Us</a>
+                <a id="faq_link_footer" href="FAQ.html">F.A.Q.</a>
+                <a id="site_plan_link_footer" href="site-plan.html">Site plan</a>
+            </div>
+            <div id="logo_footer">
+                <img id="logo_inside_footer" src="images/logo.png" alt="">
             </div>
             <div class="social_media">
-                <a href="https://facebook.com" target="_blank">
+                <a id="fb_icon" href="https://facebook.com" target="_blank">
                     <img src="images/facebook.png" alt="fb Icon">
                 </a>
-                <a href="https://twitter.com" target="_blank">
+                <a id="twitter_icon" href="https://twitter.com" target="_blank">
                     <img src="images/twitter.png" alt="twitter icon">
                 </a>
-                <a href="https://instagram.com" target="_blank">
+                <a id="instagram_icon" href="https://instagram.com" target="_blank">
                     <img src="images/instagram.png" alt="instagram Icon">
                 </a>
             </div>
